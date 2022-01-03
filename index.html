@@ -37,7 +37,7 @@
           </div>
           <div class="mail">
             <img src="./assets/images/mail-2569.svg">
-            <p>shevelevbv@hotmail.com</p>
+            <a href="mailto: shevelevbv@hotmail.com">shevelevbv@hotmail.com</a>
           </div>
           <div class="discord">
             <img src="./assets/images/discord-icon.svg">
@@ -47,7 +47,7 @@
         <section id="about">
           <div>
             <h2>About</h2>
-            <p>After years of working in the business area as a supply chain manager, I decided to
+            <p class="details">After years of working in the business area as a supply chain manager, I decided to
               change the career. I have always been passionate about computers and technology, so
               I chose to complete an online university program in computer science, while also acquiring
               new skills at RS School. My intention is to work as a full-stack web developer.
@@ -57,31 +57,106 @@
         <section id="skills">
           <div>
             <h2>Skills</h2>
+            <ul>
+              <li><p class="specifier">HTML 5</p></li>
+              <li><p class="specifier">CSS 3</p></li>
+              <li><p class="specifier">Java</p></li>
+              <li><p class="specifier">OOP</p></li>
+              <li><p class="specifier">SQL</p></li>
+            </ul>
           </div>
         </section>
         <section id="projects">
           <div>
             <h2>Projects</h2>
-          </div>
+            <div class="project-container">
+              <a href="">
+                <div class="project-sample">
+                </div>
+              </a>
+              <p>CV</p>
+            </div>
+            </div>
         </section>
         <section id="code-sample">
           <div>
             <h2>Code Sample</h2>
+            <pre>// returns two oldest ages from the array
+function twoOldestAges(ages){
+  ages.sort((a, b) => a - b);
+  return [ages[ages.length - 2], ages[ages.length - 1]];
+}</pre>
           </div>
         </section>
         <section id="work-xp">
           <div>
             <h2>Work Experience</h2>
+            <ul>
+              <li>
+                <p class="specifier">2019</p>
+                <p class="specifier">Alcon Laboratories, Fort Worth, TX</p>
+                <p class="details">Procurement Intern at Alcon Laboratories</p>
+                <p class="details">Incorporated regional and global procurement offices into a single online collaboration system</p>
+                <p class="details">Optimized purchasing processes, resulting in 25% time reduction for creating and submitting documentation</p>
+              </li>
+              <li>
+                <p class="specifier">2016 - 2018</p>
+                <p class="details">English tutor</p>
+              </li>
+              <li>
+                <p class="specifier">2010 - 2016</p>
+                <p class="specifier">Axis-Avto, Ltd., Moscow, Russia</p>
+                <p class="details">Supply Chain Manager</p>
+              </li>
+            </ul>
           </div>
         </section>
         <section id="education">
           <div>
             <h2>Education</h2>
+            <ul>
+              <li>
+                <p class="specifier">2021 - current</p>
+                <p class="specifier">RS School</p>
+                <p class="details">JavaScript/Front-end Development</p>
+              </li>
+              <li>
+                <p class="specifier">2021 - current</p>
+                <p class="specifier">University of the People</p>
+                <p class="details">Bachelor of Science in Computer Science</p>
+              </li>
+              <li>
+                <p class="specifier">2018 - 2020</p>
+                <p class="specifier">Texas Christian University</p>
+                <p class="details">Master of Business Administration</p>
+              </li>
+              <li>
+                <p class="specifier">2003 - 2008</p>
+                <p class="specifier">Komi State Pedagogical Institute</p>
+                <p class="details">Master of Education in English and German</p>
+              </li>
+            </ul>
           </div>
         </section>
         <section id="languages">
           <div>
             <h2>Languages</h2>
+            <ul>
+              <li>
+                <p class="specifier">Russian</p>
+                <p class="details">Native</p>
+              </li>
+              <li>
+                <p class="specifier">English</p>
+                <p class="details">C1 - Advanced</p>
+                <p class="details">I graduated from a Russian university with an M.Ed. degree in English and German and
+                  from a US university with an MBA degree.</p>
+              </li>
+              <li>
+                <p class="specifier">German</p>
+                <p class="details">Pre-Intermediate</p>
+              </li>
+            </ul>
           </div>
         </section>
       </div>

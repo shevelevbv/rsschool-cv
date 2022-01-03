@@ -12,17 +12,28 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: black;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #303333;
+  margin: 6rem auto 0 auto;
 }
 
 h2 {
-  text-align: center;
-  font-size: 2.5rem;
+  color: #414646;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 header {
   background-color: black;
   padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 nav {
@@ -33,7 +44,6 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-evenly;
-  list-style-type: none;
 }
 
 nav a {
@@ -48,10 +58,22 @@ nav a:hover {
 }
 
 body {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+pre {
+  color: #676969;
+  font-family: monospace;
+  border: 1px solid #d0cccc;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #f9f7f6;
+  margin-top: 2rem;
 }
 
 footer {
@@ -61,11 +83,11 @@ footer {
 }
 
 footer div {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 footer img {
@@ -84,12 +106,17 @@ footer img:hover {
   margin: 0 auto;
 }
 
+.details {
+  color: #5c6060;
+}
+
 .image-cropper {
   width: 20rem;
   height: 20rem;
   overflow: hidden;
   border-radius: 50%;
   border: 0.5rem solid #a5eef2;
+  box-shadow: 5px 5px 5px #c5c7c7;
   grid-row: span 2;
   margin: 0 auto;
 }
@@ -117,19 +144,77 @@ footer img:hover {
   height: auto;
 }
 
+#projects .project-container {
+  text-align: left;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-top: none;
+  padding-top: 2rem;
+}
+
+#projects .project-sample {
+  width: 100%;
+  background: url("./assets/images/project1.png") no-repeat center center;
+  background-size: cover;
+  opacity: 30%;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #858484;
+  border-radius: 10px;
+  padding-top: 8rem;
+  transition: opacity 0.5s, box-shadow 0.5s;
+  margin-bottom: 0;
+}
+
+#projects .project-sample:hover {
+  box-shadow: 5px 5px 5px #a4a2a2;
+  opacity: 100%;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+
+#projects .project-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #414646;
+  font-weight: bold;
+}
+
 .rs-school-logo {
   width: 4.5rem;
 }
 
+.specifier {
+  color: #414646;
+  font-weight: bold;
+}
+
 #about {
-  background-color: #f0fafa;
   margin-top: 8rem;
 }
 
-#about div {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 5rem;
+#about div,
+#skills div,
+#projects div,
+#code-sample div,
+#work-xp div,
+#education div,
+#languages div {
+  border-top: 1px solid #ecebeb;
+  width: 65%;
+  margin: 0 auto 3rem auto;
+  padding-top: 3rem;
+}
+
+#about p,
+#education p,
+#languages p,
+#skills p,
+#work-xp p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
 }
 
 #profile {
@@ -141,15 +226,10 @@ footer img:hover {
   grid-template-rows: 1fr 1fr;
 }
 
-#profile h1 {
-  font-size: 4rem;
-  margin: 6rem auto 0 auto;
-}
-
 #profile h2 {
   margin: 0 auto;
   font-size: 2rem;
-  color: #303333;
+  color: #525656;
   font-weight: 100;
 }
 
@@ -162,4 +242,44 @@ footer img:hover {
 
 #contacts p {
   margin-left: 1rem;
+}
+
+#contacts a {
+  margin-left: 1rem;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#contacts a:hover {
+  color: #33dee8;
+  transition: color 0.3s;
+}
+
+#education ul {
+  height: 29rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#languages ul {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#skills ul {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#work-xp ul {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
