@@ -194,6 +194,10 @@ footer img:hover {
   margin-top: 8rem;
 }
 
+#about p {
+  margin-top: 1rem;
+}
+
 #about div,
 #skills div,
 #projects div,
