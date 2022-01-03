@@ -20,8 +20,8 @@ After years of working in the business area as a supply chain manager, I decided
 ```
 // returns two oldest ages from the array
 function twoOldestAges(ages){
-    ages.sort((a, b) => a - b);
-    return [ages[ages.length - 2], ages[ages.length - 1]];
+  ages.sort((a, b) => a - b);
+  return [ages[ages.length - 2], ages[ages.length - 1]];
 }
 ```
 ## Education 

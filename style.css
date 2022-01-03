@@ -1,4 +1,289 @@
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #303333;
+  margin: 6rem auto 0 auto;
+}
+
+h2 {
+  color: #414646;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header {
+  background-color: black;
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: #b0b3b8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d7dbe0;
+  transition: color 0.3s;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+pre {
+  color: #676969;
+  font-family: monospace;
+  border: 1px solid #d0cccc;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #f9f7f6;
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: black;
+  color: #b0b3b8;
+  padding: 1rem;
+}
+
+footer div {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 2.5rem;
+  filter: invert(77%) sepia(6%) saturate(196%) hue-rotate(179deg) brightness(93%) contrast(88%);
+  transition: filter 0.3s;
+}
+
+footer img:hover {
+  filter: invert(93%) sepia(15%) saturate(68%) hue-rotate(173deg) brightness(93%) contrast(91%);
+  transition: filter 0.3s;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.details {
+  color: #5c6060;
+}
+
+.image-cropper {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.5rem solid #a5eef2;
+  box-shadow: 5px 5px 5px #c5c7c7;
+  grid-row: span 2;
+  margin: 0 auto;
+}
+
+.phone, .mail, .discord {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.phone img, .mail img, .discord img {
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.profile-pic {
+  position: relative;
+  display: inline;
+  margin: 0 auto;
+  margin-top: -1rem;
+  width: 100%;
+  height: auto;
+}
+
+#projects .project-container {
+  text-align: left;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-top: none;
+  padding-top: 2rem;
+}
+
+#projects .project-sample {
+  width: 100%;
+  background: url("./assets/images/project1.png") no-repeat center center;
+  background-size: cover;
+  opacity: 30%;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #858484;
+  border-radius: 10px;
+  padding-top: 8rem;
+  transition: opacity 0.5s, box-shadow 0.5s;
+  margin-bottom: 0;
+}
+
+#projects .project-sample:hover {
+  box-shadow: 5px 5px 5px #a4a2a2;
+  opacity: 100%;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+
+#projects .project-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #414646;
+  font-weight: bold;
+}
+
+.rs-school-logo {
+  width: 4.5rem;
+}
+
+.specifier {
+  color: #414646;
+  font-weight: bold;
+}
+
+#about {
+  margin-top: 8rem;
+}
+
+#about p {
+  margin-top: 1rem;
+}
+
+#about div,
+#skills div,
+#projects div,
+#code-sample div,
+#work-xp div,
+#education div,
+#languages div {
+  border-top: 1px solid #ecebeb;
+  width: 65%;
+  margin: 0 auto 3rem auto;
+  padding-top: 3rem;
+}
+
+#about p,
+#education p,
+#languages p,
+#skills p,
+#work-xp p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+#profile {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#profile h2 {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #525656;
+  font-weight: 100;
+}
+
+#contacts {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts p {
+  margin-left: 1rem;
+}
+
+#contacts a {
+  margin-left: 1rem;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#contacts a:hover {
+  color: #33dee8;
+  transition: color 0.3s;
+}
+
+#education ul {
+  height: 29rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#languages ul {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#skills ul {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#work-xp ul {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
